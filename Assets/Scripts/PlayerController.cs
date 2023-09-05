@@ -7,17 +7,17 @@ public class PlayerController : MonoBehaviour
 {
     Damageble damageable;
 
-    Animator animator;
+    //Animator animator;
     Vector2 moveInput;
     TouchingDirections touchingDirections;
     Rigidbody2D rb;
     [SerializeField]
     //private bool _isDashed;
     private bool canDash=false;
-    public bool isDashed
+   /* public bool isDashed
     {
-        get { return animator.GetBool(""); } set { animator.SetBool("isDashed", value); }
-    }
+      //  get { return animator.GetBool(""); } set { animator.SetBool("isDashed", value); }
+    }*/
 
 
     public float walkSpeed = 5f;
@@ -55,7 +55,7 @@ public class PlayerController : MonoBehaviour
         set
         {
             _isMoving = value;
-            animator.SetBool("isMoving", value);
+          //  animator.SetBool("isMoving", value);
         } 
     }
 
@@ -79,7 +79,7 @@ public class PlayerController : MonoBehaviour
         damageable = GetComponent<Damageble>();
         rb = GetComponent<Rigidbody2D>();
         touchingDirections = GetComponent<TouchingDirections>();
-        animator = GetComponent<Animator>();
+      //  animator = GetComponent<Animator>();
     }
     void Start()
     {
@@ -94,14 +94,16 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if(!damageable.lockVelocity)
-            rb.velocity = new Vector2(moveInput.x * walkSpeed * dashForce, rb.velocity.y);
-        
-        
-        if (isAttacked && touchingDirections.isGround)
-        {
-            rb.velocity = new Vector2(0, rb.velocity.y);
-        }
+        /*if(!damageable.lockVelocity)
+          rb.velocity = new Vector2(moveInput.x * walkSpeed * dashForce, rb.velocity.y);
+            */
+
+
+        /* if (isAttacked && touchingDirections.isGround)
+         {
+         rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y);
+         }*/
+
     }
 
     public void OnMove(InputAction.CallbackContext context)
@@ -112,7 +114,7 @@ public class PlayerController : MonoBehaviour
         SetFacingDirection(moveInput);
     }
 
-    public void isAttack(InputAction.CallbackContext context)
+    /*public void isAttack(InputAction.CallbackContext context)
     {
         if (context.performed)
         {
@@ -143,14 +145,14 @@ public class PlayerController : MonoBehaviour
             StartCoroutine("DashCooldown");
             StartCoroutine("DashTime");
         }
-    }
+    }*/
 
     IEnumerator DashTime()
     {
         canDash = true;
-        isDashed = true;
+      //  isDashed = true;
         yield return new WaitForSeconds(dashTime);
-        isDashed = false;
+      //  isDashed = false;
         dashForce = 1;
 
     }
