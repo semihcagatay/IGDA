@@ -7,7 +7,7 @@ public class PlayerController : MonoBehaviour
 {
     Damageble damageable;
 
-    //Animator animator;
+    Animator animator;
     Vector2 moveInput;
     TouchingDirections touchingDirections;
     Rigidbody2D rb;
@@ -55,7 +55,7 @@ public class PlayerController : MonoBehaviour
         set
         {
             _isMoving = value;
-          //  animator.SetBool("isMoving", value);
+            animator.SetBool("isMoving", value);
         } 
     }
 
@@ -79,7 +79,7 @@ public class PlayerController : MonoBehaviour
         damageable = GetComponent<Damageble>();
         rb = GetComponent<Rigidbody2D>();
         touchingDirections = GetComponent<TouchingDirections>();
-      //  animator = GetComponent<Animator>();
+        animator = GetComponent<Animator>();
     }
     void Start()
     {
@@ -94,15 +94,18 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        /*if(!damageable.lockVelocity)
-          rb.velocity = new Vector2(moveInput.x * walkSpeed * dashForce, rb.velocity.y);
-            */
+        if (!damageable.lockVelocity) 
+        {
+            rb.velocity = new Vector2(moveInput.x * walkSpeed * dashForce, rb.velocity.y);
+        }
+          
+            
 
 
-        /* if (isAttacked && touchingDirections.isGround)
-         {
-         rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y);
-         }*/
+       if (isAttacked && touchingDirections.isGround)
+       {
+            rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y);
+       }
 
     }
 
@@ -114,7 +117,7 @@ public class PlayerController : MonoBehaviour
         SetFacingDirection(moveInput);
     }
 
-    /*public void isAttack(InputAction.CallbackContext context)
+    public void isAttack(InputAction.CallbackContext context)
     {
         if (context.performed)
         {
@@ -145,7 +148,7 @@ public class PlayerController : MonoBehaviour
             StartCoroutine("DashCooldown");
             StartCoroutine("DashTime");
         }
-    }*/
+    }
 
     IEnumerator DashTime()
     {
