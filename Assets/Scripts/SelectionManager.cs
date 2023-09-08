@@ -1,38 +1,66 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class SelectionManager : MonoBehaviour
 {
+    SelectionController selectionController;
+  
+    private int count = 0;
+   
+    [SerializeField]
+    private int countplus1 = -1;
+    [SerializeField]
+    private int countplus2 = -1;
 
-    public GameObject[] GO = new GameObject[4];
-    
-    
 
-
-
-    // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
+        selectionController = GetComponent<SelectionController>();
+    }
+    public void OnSelect2(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+
+            countplus2 *= -1;
+
+            count += countplus2;
+            Debug.Log("signed2");
+            
+            Debug.Log(count);
+        }
+
+    }
+    public void OnSelect1(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+
+            countplus1 *= -1;
+
+            count += countplus1;
+            Debug.Log("signed1");
+            
+            Debug.Log(count);
+        }
+
+    }
        
-    }
 
-    // Update is called once per frame
-    
-   /* private void OnTriggerEnter(Collider other)
-    {
-        Debug.Log("triggered");
-        gameObject.SetActive(true);
-    
-    }
-    private void OnTriggerExit(Collider other)
-    {
-        Debug.Log("untriggered");
-        gameObject.SetActive(false);
 
-    }*/
-    /*private void OnMouseExit()
+    public void LoadArena()
     {
-        gameObject.SetActive(false);
-    }*/
+        SceneManager.LoadScene("ArenaScene");
+    }
+    private void FixedUpdate()
+    {
+        if(count==2)
+        {
+            LoadArena();
+        }
+    }
 }
