@@ -7,20 +7,27 @@ public class MedusaManager : MonoBehaviour
     Animator animator;
     float attackCooldown = 3f;
     float nextAttackTime = 0f;
+    MedusaHealthManager medusaHealthManager;
+    public bool isAlive = true;
 
     // Start is called before the first frame update
     void Start()
     {
         animator = GetComponent<Animator>();
+        medusaHealthManager = GetComponent<MedusaHealthManager>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Time.time >= nextAttackTime)
+        if (Time.time >= nextAttackTime && isAlive)
         {
             RandomAttack();
             nextAttackTime = Time.time + attackCooldown;
+        }
+        if(medusaHealthManager.currentHealth <= 0)
+        {
+            isAlive = false;
         }
     }
 
@@ -41,19 +48,22 @@ public class MedusaManager : MonoBehaviour
     void Attack1()
     {
         animator.SetBool("attack1", true);
-        StartCoroutine(AttackCooldown());
+        StartCoroutine("Attack1Cooldown");
     }
 
     void Attack2()
     {
         animator.SetBool("attack2", true);
-        StartCoroutine(AttackCooldown());
+        StartCoroutine("Attack2Cooldown");
     }
-
-    IEnumerator AttackCooldown()
+    IEnumerator Attack1Cooldown()
     {
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(0.4f);
         animator.SetBool("attack1", false);
+    }
+    IEnumerator Attack2Cooldown()
+    {
+        yield return new WaitForSeconds(0.4f);
         animator.SetBool("attack2", false);
     }
 }
