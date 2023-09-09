@@ -21,5 +21,5 @@ public class Arabicmanager : MonoBehaviour
 
         }
     }
-    IEnumerator 
+    
 }
