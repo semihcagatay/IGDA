@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class MedusaHealthManager : MonoBehaviour
@@ -19,10 +17,7 @@ public class MedusaHealthManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            TakeDamage(20);
-        }
+        
     }
 
     void TakeDamage(int damage)
@@ -30,4 +25,6 @@ public class MedusaHealthManager : MonoBehaviour
         currentHealth -= damage;
         healthBar.SetHealth(currentHealth);
     }
+
+ 
 }
