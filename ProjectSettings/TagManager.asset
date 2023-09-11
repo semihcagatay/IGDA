@@ -3,20 +3,17 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - Player1
-  - player2
-  - box
+  tags: []
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - player
+  - 
   - Water
   - UI
-  - DetectionLayer
-  - EbabilLayer
-  - ArabicLayer
+  - 
+  - 
+  - 
   - 
   - 
   - 
@@ -41,9 +38,6 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: Background
-    uniqueID: 3751696747
-    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0

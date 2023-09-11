@@ -13,7 +13,9 @@ GameObject:
   - component: {fileID: 2265628733430363897}
   - component: {fileID: 8576405712285409824}
   - component: {fileID: 3209623672838638575}
-  m_Layer: 0
+  - component: {fileID: 7256526890262473700}
+  - component: {fileID: 5381815878371312498}
+  m_Layer: 7
   m_Name: Medusa
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -385,3 +387,36 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &7256526890262473700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 247059984468843226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f98de7c57feb71345a689bae98933803, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isAlive: 1
+  snake: {fileID: 4307888681196184361, guid: 39a87639addf3c5478b3cd3d044d5ed8, type: 3}
+  positionX: 10
+  randomY: 0
+  attack1: 0
+  attack2: 0
+--- !u!114 &5381815878371312498
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 247059984468843226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2a28806c0243924e88ef826a1efd33d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 200
+  currentHealth: 0
+  healthBar: {fileID: 0}
