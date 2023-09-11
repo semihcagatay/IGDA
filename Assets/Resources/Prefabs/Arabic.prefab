@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2662004335871530637}
   - component: {fileID: 4823422056945728501}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DetectionZone (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -86,7 +86,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 247570421919461410}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DetectionZones
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -145,7 +145,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.25}
   m_AnchorMax: {x: 1, y: 0.75}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0.00018310547, y: -0.000015258789}
   m_SizeDelta: {x: 0.00021362305, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2366433493468738535
@@ -418,7 +418,7 @@ GameObject:
   - component: {fileID: 8091744680161106753}
   - component: {fileID: 7909826442931914453}
   - component: {fileID: 2552523954150786799}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Arabic
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -646,7 +646,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.48151854}
   m_AnchorMax: {x: 0.51600003, y: 0.5258519}
-  m_AnchoredPosition: {x: -0.0000076294, y: 444}
+  m_AnchoredPosition: {x: 52, y: 724}
   m_SizeDelta: {x: 1069, y: 52}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2608519916116687426
@@ -710,7 +710,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6617075351625523879}
   - component: {fileID: 5273249643877508631}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DetectionZone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -787,7 +787,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1628048381366846079}
   - component: {fileID: 1815762991932313710}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DetectionZone (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
