@@ -4,7 +4,7 @@ public class NewBehaviourScript : MonoBehaviour
 {
     Rigidbody2D rb;
     MedusaManager medusaManager;
-    private float thrust=0.08f;
+    private float thrust=0.1f;
     Damageble damagable;
     public bool isHit;
 

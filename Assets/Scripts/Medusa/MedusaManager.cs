@@ -35,6 +35,10 @@ public class MedusaManager : MonoBehaviour
         {
             isAlive = false;
         }
+        if(isAlive == false)
+        {
+
+        }
     }
 
     void RandomAttack()
@@ -82,5 +86,6 @@ public class MedusaManager : MonoBehaviour
         animator.SetBool("attack2", false);
         attack2 = false;
     }
+
 
 }

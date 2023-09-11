@@ -26,5 +26,10 @@ public class MedusaHealthManager : MonoBehaviour
         healthBar.SetHealth(currentHealth);
     }
 
- 
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        TakeDamage(20);
+    }
+
+
 }
