@@ -14,9 +14,9 @@ TagManager:
   - player
   - Water
   - UI
-  - 
-  - 
-  - 
+  - DetectionLayer
+  - EbabilLayer
+  - ArabicLayer
   - 
   - 
   - 

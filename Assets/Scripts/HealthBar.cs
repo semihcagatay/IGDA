@@ -9,6 +9,7 @@ public class HealthBar : MonoBehaviour
     public GameObject player;
     Damageble playerdamageble;
     public Slider healthSlider;
+    RectTransform healthRectTransform;
     private void Awake()
     {
 
@@ -20,9 +21,13 @@ public class HealthBar : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-      
+        healthRectTransform = GetComponent<RectTransform>();
         healthSlider.value = calculateCurrentHealth(playerdamageble.Health,playerdamageble.MaxHealth);
 
+    }
+    private void FixedUpdate()
+    {
+        healthRectTransform.position = new Vector2(-95+transform.parent.parent.localPosition.x,-240+transform.parent.parent.localPosition.y+10);
     }
     public void OnEnable()
     {
