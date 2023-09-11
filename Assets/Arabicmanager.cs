@@ -11,6 +11,8 @@ public class Arabicmanager : MonoBehaviour
     int attackTime=3;
     float randomX;
     float randomY;
+    public static float randomXebabil;
+    GameObject ebabil;
     
     void Start()
     {
@@ -18,12 +20,13 @@ public class Arabicmanager : MonoBehaviour
         StartCoroutine(setAttack());
         randomX = Random.Range(-10.0f,6.0f);
         randomY = Random.Range(0, 2.5f);
+        ebabil = Resources.Load<GameObject>("Prefabs/ebabil");
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        animator.SetBool("CanAttack", canAttack);
+        
     }
 
     IEnumerator setAttack()
@@ -32,20 +35,31 @@ public class Arabicmanager : MonoBehaviour
         {
             yield return new WaitForSeconds(attackTime);
             canAttack = !canAttack;
+            animator.SetBool("CanAttack", canAttack);
+            spawnEbabil();
+           
+            
         }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         animator.SetBool("Teleport",true);
+        Debug.Log("collided with"+other.name);
     }
     public void teleport()
     {
+        animator.SetBool("Teleport", false);
         transform.position=new Vector2(randomX, randomY);
         //animator.SetBool("Reback",true);
-        animator.SetBool("Teleport", false); 
+        
         randomX = Random.Range(-10.0f, 6.0f);
-        randomY = Random.Range(0, 2.5f);
+        randomY = Random.Range(0, 1.8f);
     }
-
+    
+    void spawnEbabil()
+    {
+        randomXebabil = Random.Range(-10.0f, 6.0f);
+        Instantiate(ebabil);
+    }
 }

@@ -34,7 +34,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_Enabled
-    path: DetectionZone
+    path: DetectionZones/DetectionZone
     classID: 61
     script: {fileID: 0}
     flags: 0
@@ -55,7 +55,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_Enabled
-    path: DetectionZone (1)
+    path: DetectionZones/DetectionZone (1)
     classID: 61
     script: {fileID: 0}
     flags: 0
@@ -76,7 +76,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_Enabled
-    path: DetectionZone (2)
+    path: DetectionZones/DetectionZone (2)
     classID: 61
     script: {fileID: 0}
     flags: 0
@@ -106,7 +106,7 @@ AnimationClip:
   m_ClipBindingConstant:
     genericBindings:
     - serializedVersion: 2
-      path: 375629657
+      path: 3241717484
       attribute: 3305885265
       script: {fileID: 0}
       typeID: 61
@@ -115,7 +115,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 3824254556
+      path: 2272540819
       attribute: 3305885265
       script: {fileID: 0}
       typeID: 61
@@ -124,7 +124,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 3369872799
+      path: 2891541328
       attribute: 3305885265
       script: {fileID: 0}
       typeID: 61
@@ -185,7 +185,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_Enabled
-    path: DetectionZone
+    path: DetectionZones/DetectionZone
     classID: 61
     script: {fileID: 0}
     flags: 0
@@ -206,7 +206,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_Enabled
-    path: DetectionZone (1)
+    path: DetectionZones/DetectionZone (1)
     classID: 61
     script: {fileID: 0}
     flags: 0
@@ -227,7 +227,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_Enabled
-    path: DetectionZone (2)
+    path: DetectionZones/DetectionZone (2)
     classID: 61
     script: {fileID: 0}
     flags: 0
