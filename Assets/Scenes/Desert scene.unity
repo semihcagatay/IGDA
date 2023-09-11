@@ -475,11 +475,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22162784b83e3594e8a2fca325fc7bea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!4 &1168076786 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5406864359795449796, guid: 46e3389354f31984abb27a7b02ee1154, type: 3}
-  m_PrefabInstance: {fileID: 5349955985049801382}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1755868895
 GameObject:
   m_ObjectHideFlags: 0
@@ -556,14 +551,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 791319798459084250, guid: 46e3389354f31984abb27a7b02ee1154, type: 3}
-      propertyPath: oyuncu
-      value: 
-      objectReference: {fileID: 1168076786}
-    - target: {fileID: 3764161185284546412, guid: 46e3389354f31984abb27a7b02ee1154, type: 3}
-      propertyPath: attackDMG
-      value: 15
-      objectReference: {fileID: 0}
     - target: {fileID: 3991475196200060934, guid: 46e3389354f31984abb27a7b02ee1154, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -616,33 +603,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6575264867667458888, guid: 46e3389354f31984abb27a7b02ee1154, type: 3}
-      propertyPath: attackDMG
-      value: 15
-      objectReference: {fileID: 0}
     - target: {fileID: 8346697545420902704, guid: 46e3389354f31984abb27a7b02ee1154, type: 3}
       propertyPath: m_Name
       value: LegionerBoss
       objectReference: {fileID: 0}
     - target: {fileID: 8346697545420902704, guid: 46e3389354f31984abb27a7b02ee1154, type: 3}
       propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 9221353927155278559, guid: 46e3389354f31984abb27a7b02ee1154, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 216.76
-      objectReference: {fileID: 0}
-    - target: {fileID: 9221353927155278559, guid: 46e3389354f31984abb27a7b02ee1154, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 37.026
-      objectReference: {fileID: 0}
-    - target: {fileID: 9221353927155278559, guid: 46e3389354f31984abb27a7b02ee1154, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -78
-      objectReference: {fileID: 0}
-    - target: {fileID: 9221353927155278559, guid: 46e3389354f31984abb27a7b02ee1154, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -237.95
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -657,6 +624,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 481497135692240708, guid: 7afc49f3b4ce55e4880814e56196e570, type: 3}
+      propertyPath: m_SortingOrder
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 548683236712004169, guid: 7afc49f3b4ce55e4880814e56196e570, type: 3}
       propertyPath: m_Layer
       value: 9
@@ -737,6 +708,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Arabic
       objectReference: {fileID: 0}
+    - target: {fileID: 3564471558915950383, guid: 7afc49f3b4ce55e4880814e56196e570, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 6066620648142276438, guid: 7afc49f3b4ce55e4880814e56196e570, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -747,11 +722,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6562408982638914889, guid: 7afc49f3b4ce55e4880814e56196e570, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 22
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6562408982638914889, guid: 7afc49f3b4ce55e4880814e56196e570, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 438
+      value: 244
       objectReference: {fileID: 0}
     - target: {fileID: 7961031387185492996, guid: 7afc49f3b4ce55e4880814e56196e570, type: 3}
       propertyPath: m_Layer

@@ -4,7 +4,7 @@ public class SpawnManager : MonoBehaviour
 {
     Rigidbody2D rb;
     MedusaManager medusaManager;
-    private float thrust=0.1f;
+    public float thrust=0.1f;
     Damageble damagable;
     public bool isHit;
 

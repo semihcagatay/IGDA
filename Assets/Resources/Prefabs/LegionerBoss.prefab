@@ -216,8 +216,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -86, y: -210}
-  m_SizeDelta: {x: 220.755, y: 50.3426}
+  m_AnchoredPosition: {x: -78, y: -237.95}
+  m_SizeDelta: {x: 216.76, y: 37.026}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &5581062528154255265
 MonoBehaviour:
@@ -284,6 +284,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 8346697545420902704}
   healthSlider: {fileID: 5581062528154255265}
+  oyuncu: {fileID: 5406864359795449796}
 --- !u!1 &4242787855010500253
 GameObject:
   m_ObjectHideFlags: 0
@@ -468,7 +469,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb959358bc52a904693890bc741e7dfa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackDMG: 5
+  attackDMG: 15
   knockBack: {x: 10, y: 1}
   knockBackReveerse: {x: -10, y: 1}
 --- !u!1 &6732046162001127250
@@ -579,7 +580,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb959358bc52a904693890bc741e7dfa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackDMG: 5
+  attackDMG: 15
   knockBack: {x: 10, y: 1}
   knockBackReveerse: {x: -10, y: 1}
 --- !u!1 &7818367895828343644
@@ -636,7 +637,7 @@ GameObject:
   - component: {fileID: 6127509883252790798}
   - component: {fileID: 888890120492084436}
   - component: {fileID: 8164890555069004633}
-  m_Layer: 3
+  m_Layer: 8
   m_Name: LegionerBoss
   m_TagString: player2
   m_Icon: {fileID: 0}
@@ -659,7 +660,7 @@ Transform:
   - {fileID: 5948258573668525568}
   - {fileID: 2601819925708001690}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &3793316328481086206
 Rigidbody2D:

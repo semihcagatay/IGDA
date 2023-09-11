@@ -10,6 +10,7 @@ public class MedusaHealthManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        healthBar = gameObject.GetComponentInChildren<MedusaHeathBar>();
         currentHealth = maxHealth;
         healthBar.SetMaxHealth(maxHealth);
     }
