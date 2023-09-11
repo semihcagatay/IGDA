@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour
+public class SpawnManager : MonoBehaviour
 {
     Rigidbody2D rb;
     MedusaManager medusaManager;
@@ -19,7 +19,7 @@ public class NewBehaviourScript : MonoBehaviour
     {
         rb.AddForce(Vector2.left * thrust, ForceMode2D.Impulse);      
     }
-
+    
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))

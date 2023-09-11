@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: -1664258492655229743}
   - component: {fileID: -5888864591018423060}
   - component: {fileID: 3233803790236081455}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: ebabil
   m_TagString: Untagged
   m_Icon: {fileID: 0}
